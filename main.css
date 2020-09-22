@@ -1,0 +1,464 @@
+.m-b-1 {
+  margin-bottom: 1rem;
+}
+
+.m-b-2 {
+  margin-bottom: 2rem;
+}
+
+.m-b-3 {
+  margin-bottom: 3rem;
+}
+
+.m-b-5 {
+  margin-bottom: 5rem;
+}
+
+.m-t-1 {
+  margin-top: 1rem;
+}
+
+.m-t-2 {
+  margin-top: 2rem;
+}
+
+.m-t-3 {
+  margin-top: 3rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+  font-weight: 300;
+  color: #777;
+}
+
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #333;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #333;
+}
+
+.heading-secondary--white {
+  color: white;
+}
+
+.heading-tertiary {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #333;
+}
+
+.para:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.nav {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nav__item {
+  margin-top: 2rem;
+}
+
+.nav__link {
+  color: #333;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.nav__faded {
+  color: #777;
+  font-weight: 300;
+}
+
+.nav__special {
+  display: inline;
+  margin: 0;
+  padding: 1rem 0.3rem 0rem 0rem;
+}
+
+.nav__special:not(:last-child) {
+  border-right: 1px solid gray;
+}
+
+.nav__special:last-child {
+  padding-right: 2rem;
+}
+
+.nav__icon {
+  font-size: 1.7rem;
+  color: white;
+  background: #d70f64;
+  padding: 0.3rem 0.5rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.form__group {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__input {
+  border: 1px solid #d70f64;
+  display: inline-block;
+  width: 74%;
+  height: 6rem;
+  padding: 1rem 2rem;
+  font: inherit;
+  font-size: 2rem;
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.form__input:focus + .form__label {
+  top: -20%;
+  color: #333;
+  font-size: 1.3rem;
+  z-index: 5000;
+}
+
+.form__input:focus + .form__label::after {
+  opacity: 1;
+}
+
+.form__input:invalid + .form__label {
+  top: -20%;
+  color: #333;
+  font-size: 1.3rem;
+  z-index: 5000;
+}
+
+.form__input:invalid + .form__label::after {
+  opacity: 1;
+}
+
+.form__input:focus {
+  border: 1px solid #333;
+  outline: none;
+}
+
+.form__label {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  color: #d70f64;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 1000;
+}
+
+.form__label::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: -5;
+}
+
+.form__button {
+  padding: 2rem 2rem;
+  background: #d70f64;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.form__button:hover {
+  background: #cf0358;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.details-box {
+  position: relative;
+  width: 62rem;
+  background: white;
+  padding: 5rem 3rem;
+  text-align: left;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.137);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.137);
+}
+
+.details-box__button {
+  padding: 1rem 5rem;
+  background: #d70f64;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  top: 78%;
+  right: 3rem;
+}
+
+.details-box__button:hover {
+  background: #cf0358;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.img-box {
+  margin: 1rem;
+}
+
+.img-box__figure {
+  height: 30rem;
+  width: 25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-box__img {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.img-box__caption {
+  position: absolute;
+  top: 25rem;
+  left: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  z-index: 2000;
+}
+
+.img-box__caption--hover {
+  font-size: 20rem;
+  font-weight: 700;
+  color: rgba(231, 36, 127, 0.363);
+  position: absolute;
+  top: 4rem;
+  left: -2rem;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 200;
+}
+
+.img-box__caption--button {
+  position: absolute;
+  top: 25rem;
+  right: -1rem;
+  padding: 1rem;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.img-box__button {
+  color: white;
+  font-size: 3rem;
+  line-height: 1;
+  text-decoration: none;
+  background: rgba(255, 0, 119, 0.733);
+  padding: 0.5rem 2rem;
+}
+
+.img-box__figure:hover .img-box__caption--hover {
+  top: 5rem;
+  opacity: 1;
+  scale: 1.02;
+  visibility: visible;
+}
+
+.img-box__figure:hover .img-box__img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.img-box__figure:hover .img-box__caption--button {
+  opacity: 1;
+}
+
+.header {
+  height: 100vh;
+  background-image: url("../imgs/header.jpg");
+  background-size: 100%;
+  background-position: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__icon {
+  padding: 1rem 2rem;
+}
+
+.header__icon__text {
+  color: #d70f64;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 25%;
+  left: 36%;
+  width: 60%;
+}
+
+.header__form {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.11);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.11);
+}
+
+.header__next-heading {
+  margin-top: 29rem;
+  margin-left: 15rem;
+}
+
+.section-chef {
+  height: 40rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.76)), to(rgba(255, 255, 255, 0.712))), url("../imgs/chef.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.712)), url("../imgs/chef.jpg");
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+}
+
+.section-chef__container {
+  position: absolute;
+  top: 30%;
+  right: 14%;
+}
+
+.section-cities {
+  padding: 15rem 20rem;
+}
+
+.section-cities__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-pocket {
+  padding: 5rem 0rem;
+}
+
+.section-pocket__title {
+  padding-left: 10rem;
+}
+
+.section-pocket__container {
+  width: 100%;
+  background: #d70f64;
+  color: white;
+  padding: 10rem;
+}
+
+.section-pocket__iphone-icon {
+  border: 1px solid white;
+  display: inline-block;
+  padding: 5px 1rem;
+  margin-right: 1rem;
+}
+
+.section-pocket__iphone-icon__sub {
+  font-size: 1rem;
+}
+
+.section-pocket__iphone-icon__main {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.section-pocket__icon-container {
+  padding-top: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

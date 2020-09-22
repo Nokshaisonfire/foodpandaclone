@@ -1,0 +1,22 @@
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 300;
+  color: $dark-gray;
+}
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 300;
+  color: $dark-gray;
+  &--white {
+    color: white;
+  }
+}
+
+.heading-tertiary {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: $dark-gray;
+}
+.para:not(:last-child) {
+  margin-bottom: 1rem;
+}

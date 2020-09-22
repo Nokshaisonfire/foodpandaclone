@@ -1,0 +1,37 @@
+.header {
+  height: 100vh;
+  background-image: url("../imgs/header.jpg");
+  background-size: 100%;
+  background-position: top;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__icon {
+    padding: 1rem 2rem;
+    &__text {
+      color: $primary;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+  }
+  &__text-box {
+    position: absolute;
+    top: 25%;
+    left: 36%;
+    width: 60%;
+  }
+  &__form {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.11);
+  }
+  &__next-heading {
+    margin-top: 29rem;
+    margin-left: 15rem;
+  }
+}

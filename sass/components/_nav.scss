@@ -1,0 +1,38 @@
+.nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  &__item {
+    margin-top: 2rem;
+  }
+  &__link {
+    color: $dark-gray;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  &__faded {
+    color: $gray;
+    font-weight: 300;
+  }
+  &__special {
+    display: inline;
+    margin: 0;
+    padding: 1rem 0.3rem 0rem 0rem;
+    &:not(:last-child) {
+      border-right: 1px solid gray;
+    }
+    &:last-child {
+      padding-right: 2rem;
+    }
+  }
+  &__icon {
+    font-size: 1.7rem;
+    color: white;
+    background: $primary;
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+}

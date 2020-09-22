@@ -1,0 +1,26 @@
+.details-box {
+  position: relative;
+  width: 62rem;
+  background: white;
+  padding: 5rem 3rem;
+  text-align: left;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.137);
+  &__button {
+    padding: 1rem 5rem;
+    background: $primary;
+    color: white;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background: #cf0358;
+      transform: scale(1.03);
+    }
+    position: absolute;
+    top: 78%;
+    right: 3rem;
+  }
+}
